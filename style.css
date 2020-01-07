@@ -1,0 +1,96 @@
+*{
+    background-color: #434343;
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+    letter-spacing: 10px;
+}
+
+#UI{
+    position: relative;
+    box-sizing: border-box;
+}
+
+#win, #win div, #display-winner{background-color: #212121;}
+button, button:hover, #win{transition: 0.4s;}
+
+#win{
+    display: grid;
+    grid-template-rows: 30%;
+    align-items: end;
+    justify-items: center;
+    grid-gap: 40px;
+    position: fixed;
+    height: 70%;
+    width: 60%;
+    top: 9%;
+    left: -160%;
+    font-size: 4rem;
+
+    color: white;
+    border: 9px  white dashed;
+}
+
+#display-winner{
+    font-size: 10rem;
+    align-self:start ;
+    border-bottom: 12px white dashed;
+    
+}
+
+
+button{
+    position: fixed;
+    font-size: 2rem;
+    color: white;
+    border: 0;
+    border-bottom: 5px black solid;
+    top: -55px;
+    left: 5%;
+    width: 200px;
+    height: 80px;
+    background-color: #2E7D32;
+
+}
+
+button:hover{
+    top: 0;
+    cursor: pointer;
+}
+
+#wrapper{
+      
+    margin: 10vh 32vw;
+    display: grid;
+    grid-template-columns: repeat(3,12vw);
+    grid-template-rows: repeat(3,12vw);
+
+
+}
+
+.tile{
+
+    overflow: hidden;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+
+.tile:hover{
+    cursor: pointer;
+}
+
+#t1, #t2, #t8, #t7, #t4, #t5{
+    transition: 0.4s; 
+    border-right: 6px white solid;
+}
+
+#t4, #t5, #t6, #t7, #t8, #t9{
+    transition: 0.4s; 
+    border-top: 6px white solid;
+}
+
+.tile img{
+    margin: 30%;
+    width: 40%;
+}
